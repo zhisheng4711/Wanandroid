@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <!-- 背景色视图 -->
+
+    <ImageView
+    android:id="@+id/imageitem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textItem"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@id/imageitem"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="2dp"
+        android:text="标题："/>
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textItem"
+        android:text="作者：" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="410dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/author"
+        android:layout_alignParentRight="true"
+        android:layout_weight="1"
+        android:text="时间：" />
+
+</RelativeLayout>

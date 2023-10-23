@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="1dp"
+    android:background="@color/white"
+    android:padding="6dp">
+
+    <!-- 背景色视图 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <TextView
+        android:id="@+id/newstitle"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:text="标题：" />
+
+    <TextView
+        android:id="@+id/newsauthor"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:text="作者：" />
+
+    <TextView
+        android:id="@+id/newsdata"
+        android:layout_width="200dp"
+        android:layout_height="29dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:text="时间：" />
+</RelativeLayout >
